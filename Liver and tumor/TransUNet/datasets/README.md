@@ -1,8 +1,9 @@
-# Data Preparing
+# Preprocessing Data
 
-1. Access to the synapse multi-organ dataset:
-   1. Sign up in the [official Synapse website](https://www.synapse.org/#!Synapse:syn3193805/wiki/) and download the dataset. Convert them to numpy format, clip the images within [-125, 275], normalize each 3D image to [0, 1], and extract 2D slices from 3D volume for training cases while keeping the 3D volume in h5 format for testing cases.
-   2.  You can also send an Email directly to jienengchen01 AT gmail.com to request the preprocessed data for reproduction.
+With this notebook you can process the Train and Test data to be able to run in TransUNet network.
+
+1. Access to the LiTS organ dataset:
+   1. Sign up in the [official LiTS website](https://competitions.codalab.org/competitions/17094#participate-get-data) and download the dataset. Convert them to numpy format, change the windowing image to [-200, 200], normalize each 3D image to [0, 1], and extract 2D slices from 3D volume for training cases while keeping the 3D volume in h5 format for testing cases.
 2. The directory structure of the whole project is as follows:
 
 ```bash
@@ -19,7 +20,7 @@
 │           ├── R50+ViT-B_16.npz
 │           └── *.npz
 └── data
-    └──Synapse
+    └──LITS
         ├── test_vol_h5
         │   ├── case0001.npy.h5
         │   └── *.npy.h5
