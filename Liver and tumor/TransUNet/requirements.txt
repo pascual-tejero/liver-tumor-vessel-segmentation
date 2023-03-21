@@ -1,0 +1,16 @@
+#torch==1.7.1
+torchvision==0.1.6
+numpy ==1.19.5
+tqdm
+tensorboard
+tensorboardX
+ml-collections
+medpy
+SimpleITK
+scipy
+h5py
+polyaxon-client==0.6.1
+markupsafe==2.0.1
+scikit-image
+wget
+protobuf==3.20.*

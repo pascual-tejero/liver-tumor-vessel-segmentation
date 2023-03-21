@@ -1,0 +1,7 @@
+version: 1
+kind: pytorch
+environment:
+    node_selector:
+         polyaxon: pytorch
+build:
+  image: 'pytorch/pytorch:1.4-cuda10.1-cudnn7-runtime'

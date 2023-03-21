@@ -1,0 +1,23 @@
+
+#################################
+## Running in local parameters ##
+#################################
+
+lits_dataset: 'C:\Users\Natalia\Documents\01. Master\2022-WS\02. CS\04. Dataset\01. Liver and Tumor\LITS - Challenge\Training\TransUNet'
+synapse_dataset: 'C:\Users\Natalia\Documents\01. Master\2022-WS\02. CS\06. Code\TransUNet-main\data\Synapse'
+pretrained_model: 'C:\Users\Natalia\Documents\01. Master\2022-WS\02. CS\06. Code\TransUNet-main\model'
+#out_dir: 'C:\Users\Natalia\Documents\01. Master\2022-SS\01. PMSD\07. Code\SalivaryGlandSegmentation\models'
+gpus_local: 1
+num_workers_local: 0
+
+####################################
+## Running in polyaxon parameters ##
+####################################
+
+on_polyaxon: True
+polyaxon_lits_dataset : '/natalia_ap/TransUNet/data/LITS'  
+polyaxon_synapse_dataset : '/natalia_ap/TransUNet/data/Synapse'  
+polyaxon_pretrained_model: '/natalia_ap/TransUNet/model'
+polyaxon_test_dir: '/predictions'
+gpus_polyaxon: 2
+num_workers_polyaxon: 10

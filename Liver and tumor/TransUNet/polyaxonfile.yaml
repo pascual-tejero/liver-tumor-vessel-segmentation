@@ -1,0 +1,32 @@
+---
+version: 1
+
+kind: experiment
+
+build:
+  # image: pytorch/pytorch:1.4-cuda10.1-cudnn7-runtime
+  image: pytorch/pytorch:1.7.0-cuda11.0-cudnn8-runtime
+  # image: pytorch/pytorch:1.13.0-cuda11.6-cudnn8-runtime
+  build_steps:
+    - python3 --version
+    - pip --version
+    - pip install -r requirements.txt
+
+environment:
+  resources:
+    cpu:
+      requests: 3
+      limits: 3
+    memory:
+      requests: 32000
+      limits: 32000
+    gpu:
+      requests: 1
+      limits: 1    
+
+declarations:
+  data_root: None
+
+run:
+  # cmd: CUDA_VISIBLE_DEVICES=0 python -u train.py --dataset LITS --vit_name R50-ViT-B_16 --base_lr 0.01 --max_epochs 15 --img_size 256 --batch_size 20
+  cmd: python test.py --dataset LITS --vit_name R50-ViT-B_16 --base_lr 0.01 --max_epochs 15 --img_size 256 --batch_size 20 --model_time 20230321_07_32_54 --is_savenii
