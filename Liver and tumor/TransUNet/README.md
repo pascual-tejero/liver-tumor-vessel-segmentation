@@ -2,7 +2,7 @@
 
 This folder holds code for [TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation](https://arxiv.org/pdf/2102.04306.pdf) and adapted to run it in LITS dataset.
 
-The parts that where changed to be able to run it in polyaxon and in LITS data set there is a commet that says `# CHANGE`
+The parts that where changed to be able to run it in Polyaxon and LITS data set there is a commet that says `# CHANGE`
 
 ## Usage
 
