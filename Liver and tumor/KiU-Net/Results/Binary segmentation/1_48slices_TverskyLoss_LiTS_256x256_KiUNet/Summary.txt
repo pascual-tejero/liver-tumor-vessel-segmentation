@@ -1,4 +1,0 @@
-para.size = 48 slices
-Loss = Tversky Loss
-Dataset = LiTS 
-Image size = 256x256
