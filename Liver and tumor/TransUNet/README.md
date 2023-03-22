@@ -73,7 +73,7 @@ The output and the saved files are located in NAS cluster in the folder
 
 It was used 5 folding cross validation, with 80% of the data for training and 20% of the data for testing.
 
-In the folder ["./lists/lists_LITS/train/cv5"](/lists/lists_LITS/train/cv5) and ["./lists/lists_LITS/test/cv5"](/lists/lists_LITS/test/cv5) there are the the files for each folding. To train each folding individually, the train and test file has to be copy and paste in ["./lists/lists_LITS"](/lists/lists_LITS) and renamed them "train.txt" and "test_vol.txt" respectively.
+In the folder ["./lists/lists_LITS/train/cv5"](/lists/lists_LITS/Train/cv5) and ["./lists/lists_LITS/test/cv5"](/lists/lists_LITS/Test/cv5) there are the the files for each folding. To train each folding individually, the train and test file has to be copy and paste in ["./lists/lists_LITS"](/lists/lists_LITS) and renamed them "train.txt" and "test_vol.txt" respectively.
 
 The dice score (%) results on testing of each folding are possible to see it in the next table.
 
@@ -89,7 +89,7 @@ The dice score (%) results on testing of each folding are possible to see it in 
 
 In addition, to see how the model behave in cases where the tumor was big, and in cases where the tumor was relatively small. The model was trained and test individually just "Big Tumors" and "Small Tumors". Where big tumors is set in cases where the total quantity of pixels of the tumor was greater than 7000 and small tumors where the total number of pixels of the tumor is less than 7000. 
 
-In the folder ["./lists/lists_LITS/train/Tumor Size"](/lists/lists_LITS/train/Tumor Size) and ["./lists/lists_LITS/test/Tumor Size"](/lists/lists_LITS/test/Tumor Size) there are the the files for big and small tumors. To train each type of tumor individually, the train and test file has to be copy and paste in ["./lists/lists_LITS"](/lists/lists_LITS) and renamed them "train.txt" and "test_vol.txt" respectively.
+In the folder ["./lists/lists_LITS/train/Tumor Size"](/lists/lists_LITS/Train/Tumor size) and ["./lists/lists_LITS/test/Tumor Size"](/lists/lists_LITS/Test/Tumor Size) there are the the files for big and small tumors. To train each type of tumor individually, the train and test file has to be copy and paste in ["./lists/lists_LITS"](/lists/lists_LITS) and renamed them "train.txt" and "test_vol.txt" respectively.
 
 The dice score (%) results on testing for each type of tumor are possible to see it in the next table.
 
