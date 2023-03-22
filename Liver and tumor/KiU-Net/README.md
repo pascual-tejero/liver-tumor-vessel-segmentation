@@ -1,6 +1,6 @@
 # Liver and tumor segmentation - KiU-Net
 
-Adaptation and improvement of the existing neural network KiU-Net from the conference paper: [KiU-Net: Towards Accurate Segmentation of Biomedical Images using Over-complete Representations](https://arxiv.org/abs/2006.04878). The repository where we get the code can be found [here](https://github.com/jeya-maria-jose/KiU-Net-pytorch).
+Adaptation and improvement of the existing neural network KiU-Net from the conference paper: [KiU-Net: Towards Accurate Segmentation of Biomedical Images using Over-complete Representations](https://arxiv.org/abs/2006.04878) by Jeya Maria Jose Valanarasu, Vishwanath A. Sindagi, Ilker Hacihaliloglu and Vishal M. Patel (2021). The repository where we get the code can be found [here](https://github.com/jeya-maria-jose/KiU-Net-pytorch).
 
 The task to solve for this architecture is to segment from medical CT-contrast-enhaced scans from the public dataset [LiTS challenge](https://competitions.codalab.org/competitions/17094) the liver and tumor separately.
 
