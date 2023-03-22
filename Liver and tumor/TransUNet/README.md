@@ -1,6 +1,6 @@
 # TransUNet - Liver and Tumor Segmentation
 
-This folder holds code for [TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation](https://arxiv.org/pdf/2102.04306.pdf) and adapted to run it in LITS dataset.
+This folder holds the code for [TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation](https://arxiv.org/pdf/2102.04306.pdf) and adapted to run it in LITS dataset.
 
 The code is able to run it locally or in polyaxon. However, is recommend it to run it in polyaxon for better performance.
 
