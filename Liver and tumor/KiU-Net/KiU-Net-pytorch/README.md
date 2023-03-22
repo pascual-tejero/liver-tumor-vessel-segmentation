@@ -1,4 +1,4 @@
-# Liver and tumor segmengtation:
+# Liver and tumor segmentation:
 
 ## Requirements:
 
