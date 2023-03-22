@@ -33,3 +33,8 @@ For more detailed information about the results and how they were obtained, plea
 ## KiUNet.iynb
 
 The following code provides an in-depth analysis of various datasets such as LiTS, Medical Segmentation Decathlon, and 3D-IRCADb-01 for the segmentation task. For each patient in both the training and test sets, we detect and count the labels for the background, liver, and tumor, as well as the number of patients that do not have tumors segmented in their masks. We also identify slices where the liver or tumor is located for each direction, unique labels, and the maximum and minimum slice difference for tumor and liver segmentation to analyze their size. In addition, we provide visualizations of the slice difference and the CT scan. Moreover, the code includes training and testing for different architectures, along with visualization of the loss function.
+
+
+## References
+
+KiU-Net: Overcomplete Convolutional Architectures for Biomedical Image and Volumetric Segmentation. Jeya Maria Jose Valanarasu, Vishwanath A. Sindagi, Ilker Hacihaliloglu and Vishal M. Patel (2021). IEEE Transactions on Medical Imaging, vol. 40, no. 5, pp. 1425-1437, May 2021, doi: 10.1109/TMI.2021.3068556.
