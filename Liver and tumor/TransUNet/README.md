@@ -22,7 +22,7 @@ Please go to ["./datasets/README.md"](datasets/README.md) for details, the pre-p
 
 ### 3. Parameter Configuration
 
-In the file ["./config/config_dncnn.yaml"](config/config_dncnn.yaml) it is possible to set if the code is run in Polyaxon (`on_polyaxon: True`) or Locally `on_polyaxon: False`.
+In the file ["./config/config_dncnn.yaml"](config) it is possible to set if the code is run in Polyaxon (`on_polyaxon: True`) or Locally `on_polyaxon: False`.
 
 In addition, it is possible to set:
 - `lits_dataset`: Folder path where is located the LITS dataset (locally or Polyaxon)
@@ -31,6 +31,8 @@ In addition, it is possible to set:
 - `gpus`: GPU to use
 - `num_workers`: Number of workers to train the model
 
+In addition, in the folder ["./lists/lists_LITS"](/lists/lists_LITS) you need to add the file "train.txt" and "test_vol.txt" which contain the name of the files that are going to be use for training and testing respectively.
+
 ### 4. Environment
 
 Please prepare an environment with python=3.7 and cuda 11 to be able to run it in polyaxon, and the requirements are located in "requirements.txt" for the dependencies.
@@ -38,7 +40,7 @@ Please prepare an environment with python=3.7 and cuda 11 to be able to run it i
 
 ### 5. Train/Test
 
-- Run the polyaxon file "polyaxonfile.yaml". To run the training comment line 32 of the file and uncomment line 31 of the file, and set or change the different hyperparameters.
+- Run the polyaxon file "polyaxonfile.yaml". To run the training, comment line 32 of the file and uncomment line 31 of the file, and set or change the different hyperparameters.
     - `--vit_name`: pretained model used.
     - `--dataset`: Dataset to train
     - `--base_lr`: Learning rather
@@ -50,7 +52,7 @@ Please prepare an environment with python=3.7 and cuda 11 to be able to run it i
 cmd: CUDA_VISIBLE_DEVICES=0 python -u train.py --dataset LITS --vit_name R50-ViT-B_16 --base_lr 0.01 --max_epochs 15 --img_size 256 --batch_size 20
 ```
 - Run the polyaxon file "polyaxonfile.yaml". It supports testing for both 2D images and 3D volumes. 
-- To run the Testing comment line 31 of the file and uncomment line 32 of the file, and set or change the different hyperparameters.
+- To run the Testing, comment line 31 of the file and uncomment line 32 of the file, and set or change the different hyperparameters.
     - `--vit_name`: pretained model used.
     - `--dataset`: Dataset to train
     - `--base_lr`: Learning rather
@@ -64,6 +66,21 @@ cmd: CUDA_VISIBLE_DEVICES=0 python -u train.py --dataset LITS --vit_name R50-ViT
 cmd: python test.py --dataset LITS --vit_name R50-ViT-B_16 --base_lr 0.01 --max_epochs 15 --img_size 256 --batch_size 20 --model_time 20230321_07_32_54 --is_savenii
 ```
 The output and the saved files are located in NAS cluster in the folder
+
+## Results
+
+It was used 5 folding cross validation, with 80% of the data for training and 20% of the data for testing.
+
+In the folder ["./lists/lists_LITS/train/cv5"](/lists/lists_LITS/train/cv5) and ["./lists/lists_LITS/test/cv5"](/lists/lists_LITS/test/cv5) there are the the files for each folding. To train each folding individually, the train and test file has to be copy and paste in ["./lists/lists_LITS"](/lists/lists_LITS) and renamed them "train.txt" and "test_vol.txt" respectively.
+
+| Folding | Liver | Tumor|
+| ------ | ------ |------|
+|   1     |    94.29%    | 53.70%|
+|   2    |     94.52%|61.65%|
+|3|93.87%|43.63%|
+|4| 94.54%| 58.84%|
+|5| 94.16%|56.93%|
+
 
 ## Reference
 * [Google ViT](https://github.com/google-research/vision_transformer)
