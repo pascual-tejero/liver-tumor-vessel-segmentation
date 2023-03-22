@@ -1,4 +1,4 @@
-# Liver and tumor segmengtation using KiU-Net:
+# Liver and tumor segmengtation:
 
 ## Requirements:
 
