@@ -23,7 +23,11 @@ pip install tensorboard
 
 ## Dataset
 
-Liver tumor Segmentation Challenge (LiTS) contain 131 contrast-enhanced CT images provided by hospital around the world. 3DIRCADb dataset is a subset of LiTS dataset with case number from 27 to 48. we train our model with 111 cases from LiTS after removeing the data from 3DIRCADb and evaluate on 3DIRCADb dataset. For more details about the dataset: https://competitions.codalab.org/competitions/17094
+Mainly, we used Liver tumor Segmentation Challenge (LiTS) dataset containing 131 contrast-enhanced CT images provided by hospital around the world. We discarded those 14 patients with no tumor segmentation or with artifacts (30, 32, 34, 38, 41, 47, 87, 89, 91, 105, 106, 114, 115, 119), and divided the dataset into train and test sets.
+- Patients in training set (101): 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 88, 90, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 107, 108, 109, 110, 111, 112, 113, 116, 117, 118, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129 and 130
+- Patients in test set (16): 27, 28, 29, 31, 33, 35, 36, 37, 39, 40, 42, 43, 44, 45, 46 and 48.
+
+Note that for the cases of cross-validation or ablation study (in _Results_ folder) we use a different configuration of train and test sets than the this one.
 
 ## Changes from the original code
 
