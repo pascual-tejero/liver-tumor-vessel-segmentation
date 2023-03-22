@@ -16,9 +16,9 @@ For the multi-class segmentation task, two additional subfolders exist, namely C
 Here, there's an example of the patient 27 of the CT scan, the ground truth mask and the segmentation by KiU-Net:
 <table>
   <tr>
-    <td><img src="img/ct_pt27.png" alt="CT image"></td>
-    <td><img src="img/gt_pt27.png" alt="Ground truth segmentation"></td>
-    <td><img src="img/pred_pt27.png" alt="Predicted segmentation"></td>
+    <td><img src="../img/ct_pt27.png" alt="CT image"></td>
+    <td><img src="../img/gt_pt27.png" alt="Ground truth segmentation"></td>
+    <td><img src="../img/pred_pt27.png" alt="Predicted segmentation"></td>
   </tr>
 </table>
 
