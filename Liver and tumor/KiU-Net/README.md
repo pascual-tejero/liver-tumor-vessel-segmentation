@@ -24,9 +24,9 @@ In the folder named KiU-Net-pytorch, you can find the complete architecture code
 
 The _Results_ folder contains the dice scores for the segmentation task using different architectures, including ResUNet, UNet, SegNet, KiUNetmin, and KiUNet. The results are organized into two folders: binary segmentation and multi-class segmentation.
 
-In the binary segmentation folder, we followed the same approach as in the original code, where the liver and tumor labels are combined into a single value, and the task is to segment the background vs. the liver/tumor.
+- In the binary segmentation folder, we followed the same approach as in the original code, where the liver and tumor labels are combined into a single value, and the task is to segment the background vs. the liver/tumor.
+- In the multi-class segmentation folder, the task is more complex, with a segmentation of the background vs. liver vs. tumor for the corresponding architecture.
 
-In the multi-class segmentation folder, the task is more complex, with a segmentation of the background vs. liver vs. tumor for the corresponding architecture.
 
 For more detailed information about the results and how they were obtained, please refer to the README.md file in this folder.
 
