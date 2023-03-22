@@ -3,6 +3,7 @@
 This folder holds code for [TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation](https://arxiv.org/pdf/2102.04306.pdf) and adapted to run it in LITS dataset.
 
 The parts that where changed to be able to run it in Polyaxon and LITS data set there is a commet that says `# CHANGE`
+The code is able to run it locally or in polyaxon. However, is recommend it to run it in polyaxon for better performance.
 
 ## Usage
 
@@ -18,11 +19,23 @@ mv {MODEL_NAME}.npz ../model/vit_checkpoint/imagenet21k/{MODEL_NAME}.npz
 
 Please go to ["./datasets/README.md"](datasets/README.md) for details, the pre-processed is in NAS folders "Natalia AP".
 
-### 3. Environment
+### 3. Parameter Configuration
+
+In the file ["./config/config_dncnn.yaml"](config_dncnn.yaml) it is possible to set if the code is run in Polyaxon (`on_polyaxon: True`) or Locally `on_polyaxon: False`.
+
+In addition, it is possible to set:
+- `lits_dataset`: Folder address where is located the LITS dataset (locally or Polyaxon)
+- `synapse_dataset`: Folder address where is located Synapse dataset (locally or Polyaxon)
+- `pretrained_model`: Folder address where is located the pretained model
+- `gpus`: GPU to use
+- `num_workers`: Number of workers to train the model
+
+### 4. Environment
 
 Please prepare an environment with python=3.7 and cuda 11 to be able to run it in polyaxon, and the requirements are located in "requirements.txt" for the dependencies.
 
-### 4. Train/Test
+
+### 5. Train/Test
 
 - Run the polyaxon file "polyaxonfile.yaml". To run the training comment line 32 of the file and uncomment line 31 of the file, and set or change the different hyperparameters.
     - `--vit_name`: pretained model used.
@@ -49,36 +62,7 @@ cmd: CUDA_VISIBLE_DEVICES=0 python -u train.py --dataset LITS --vit_name R50-ViT
 ```bash
 cmd: python test.py --dataset LITS --vit_name R50-ViT-B_16 --base_lr 0.01 --max_epochs 15 --img_size 256 --batch_size 20 --model_time 20230321_07_32_54 --is_savenii
 ```
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.lrz.de/computational-surgineering/liver_vessel_segm.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.lrz.de/computational-surgineering/liver_vessel_segm/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+The output and the saved files are located in NAS cluster in the folder
 
 ## Test and Deploy
 
