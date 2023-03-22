@@ -4,7 +4,9 @@ This folder holds the code for [TransUNet: Transformers Make Strong Encoders for
 
 The code is able to run it locally or in polyaxon. However, is recommend it to run it in polyaxon for better performance.
 
-Before training the model on LITS dataset, the model was trained and test on the Synapse dataset which is the original dataset that was used in TransUNet architecture. After obtaining similar results as in the paper, the code was modified to be able to run it in Polyaxon and LITS data set. This changes can be visualized in the files with a comment that says `# CHANGE`
+Before training the model on LITS dataset, the model was trained and test on the Synapse dataset which is the original dataset that was used in TransUNet architecture. TransUNet architecture is developed for multi-organ segmentation in Synapse dataset (8 Classses). For more information of Synapse Dataset go to [official Synapse website](https://www.synapse.org/#!Synapse:syn3193805/wiki/)
+
+After obtaining similar results as in the paper, the code was modified to be able to run it in Polyaxon and LITS data set. This changes can be visualized in the files with a comment that says `# CHANGE`
 
 ## Usage
 
@@ -89,7 +91,7 @@ The dice score (%) results on testing of each folding are possible to see it in 
 
 In addition, to see how the model behave in cases where the tumor was big, and in cases where the tumor was relatively small. The model was trained and test individually just "Big Tumors" and "Small Tumors". Where big tumors is set in cases where the total quantity of pixels of the tumor was greater than 7000 and small tumors where the total number of pixels of the tumor is less than 7000. 
 
-In the folder ["./lists/lists_LITS/train/Tumor Size"](lists/lists_LITS/Train/Tumor size) and ["./lists/lists_LITS/test/Tumor Size"](lists/lists_LITS/Test/Tumor Size) there are the the files for big and small tumors. To train each type of tumor individually, the train and test file has to be copy and paste in ["./lists/lists_LITS"](lists/lists_LITS) and renamed them "train.txt" and "test_vol.txt" respectively.
+In the folder ["./lists/lists_LITS/train/Tumor Size"](lists/lists_LITS/Train/Tumor size) and ["./lists/lists_LITS/test/Tumor Size"](lists/lists_LITS/Test/Tumor Size) there are the the files for big and small tumors. To train each type of tumor individually, the train and test file has to be copy and paste in ["./lists/lists_LITS"](lists/lists_LITS) and renamed them "train.txt" and "test_vol.txt" respectively. In this case the patients that didn't present any anomally (healthy liver) where not add it into the training or testing set.
 
 The dice score (%) results on testing for each type of tumor are possible to see it in the next table.
 
@@ -97,6 +99,8 @@ The dice score (%) results on testing for each type of tumor are possible to see
 | ------ | ------ |------|------|
 |Big Tumor|>7000| 92.48%   | 74.50%|
 |Small| <7000|95.42|45.89%|
+
+Because of previous results is possible to see that the model is robust for multi-segmentation in cases that both classes have a significant total number of pixels. On the other hand, if one of the classes doesn't have a big representation in the image the model fails to segment them accurately.
 
 ## Reference
 * [Google ViT](https://github.com/google-research/vision_transformer)
