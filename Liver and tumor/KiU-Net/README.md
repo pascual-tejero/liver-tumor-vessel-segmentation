@@ -14,7 +14,7 @@ To combine the features of the two networks and further exploit their capacity, 
 
 Overall, KiU-Net 3D is a 3D convolutional architecture designed for volumetric segmentation tasks that addresses the challenges of detecting small structures in the image.
 
-![KiU-Net architecture](KiU-Net-pytorch/img/arch.png)
+![KiU-Net architecture](img/arch.png)
 
 ## KiU-Net-pytorch folder
 
