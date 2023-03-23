@@ -32,6 +32,11 @@ For the [multi-class segmentation](https://gitlab.lrz.de/computational-surgineer
 Here, there's an example of the patient 27 of the CT scan, the ground truth mask and the segmentation by KiU-Net:
 <table>
   <tr>
+    <th>CT scan</th>
+    <th>Ground truth</th>
+    <th>Prediction</th>
+  </tr>
+  <tr>
     <td><img src="../img/ct_pt27.png" alt="CT image"></td>
     <td><img src="../img/gt_pt27.png" alt="Ground truth segmentation"></td>
     <td><img src="../img/pred_pt27.png" alt="Predicted segmentation"></td>
