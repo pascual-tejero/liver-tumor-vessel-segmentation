@@ -23,10 +23,10 @@ For the [multi-class segmentation](https://gitlab.lrz.de/computational-surgineer
 
 - In the [Ablation study](https://gitlab.lrz.de/computational-surgineering/liver_vessel_segm/-/tree/Pascual/Liver%20and%20tumor/KiU-Net/Results/Multi-class%20segmentation/9_AblationStudy_KiUNet_LiTS_CrossEntropyLoss) subfolder, we divided the dataset into two subsets (big and small tumor) based on the number of tumor labels: [high tumor label representation](https://gitlab.lrz.de/computational-surgineering/liver_vessel_segm/-/tree/Pascual/Liver%20and%20tumor/KiU-Net/Results/Multi-class%20segmentation/9_AblationStudy_KiUNet_LiTS_CrossEntropyLoss/High%20tumor%20representation) (> 7000 tumor labels in a patient) and [low tumor label representation](https://gitlab.lrz.de/computational-surgineering/liver_vessel_segm/-/tree/Pascual/Liver%20and%20tumor/KiU-Net/Results/Multi-class%20segmentation/9_AblationStudy_KiUNet_LiTS_CrossEntropyLoss/Low%20tumor%20representation) (< 7000 tumor labels in a patient). We obtained 56 and 62 patients, respectively, and discarded 13 patients that did not have tumor segmentation in the ground truth mask. We then divided each subset into train and test sets and ran the KiU-Net model, achieving better results for the high tumor label representation dataset than the other. Additionally, we apply data augmentation to those two datasets (horizontal flip, random rotation and affine transformation) to increase the number of training samples. This is a summary of the segmentation results (Dice score) obtained:
 
-|   Dataset     |  Liver  | Tumor  |
-| ------------- | ------  | ------ |
-|  Big tumor    |  84.97% | 65.55% |
-|  Small tumor  |  88.28% | 23.02% |
+|   Dataset     | Tumor – Total of pixels | Liver  | Tumor  |
+| ------------- | ----------------------- | ------ | ------ |
+|  Big tumor    |       > 7000            | 84.97% | 65.55% |
+|  Small tumor  |       < 7000            | 88.28% | 23.02% |
 
 
 Here, there's an example of the patient 27 of the CT scan, the ground truth mask and the segmentation by KiU-Net:
