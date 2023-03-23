@@ -28,7 +28,7 @@ In order to adapt the code to our more complex multi-class segmentation task, we
 The [Results](https://gitlab.lrz.de/computational-surgineering/liver_vessel_segm/-/tree/Pascual/Liver%20and%20tumor/KiU-Net/Results) folder contains the dice scores for the segmentation task using different architectures, including ResUNet, UNet, SegNet, KiUNetmin, and KiUNet. The results are organized into two folders: binary segmentation and multi-class segmentation.
 
 - In the [Binary segmentation](https://gitlab.lrz.de/computational-surgineering/liver_vessel_segm/-/tree/Pascual/Liver%20and%20tumor/KiU-Net/Results/Binary%20segmentation/1_KiUNet_LiTS_TverskyLoss) folder, we followed the same approach as in the original code, where the liver and tumor labels are combined into a single value (1), and the task is to segment the background (0) vs. the liver/tumor (1).
-- In the [Multi-class segmentation](https://gitlab.lrz.de/computational-surgineering/liver_vessel_segm/-/tree/Pascual/Liver%20and%20tumor/KiU-Net/Results/Multi-class%20segmentation) folder, the task is more complex, with a segmentation of the background vs. liver vs. tumor for the corresponding architecture.
+- In the [Multi-class segmentation](https://gitlab.lrz.de/computational-surgineering/liver_vessel_segm/-/tree/Pascual/Liver%20and%20tumor/KiU-Net/Results/Multi-class%20segmentation) folder, the task is more complex, with a segmentation of the background (0) vs. liver (1) vs. tumor (2) for the corresponding architecture.
 
 For more detailed information about the results and how they were obtained, please refer to the [README.md](https://gitlab.lrz.de/computational-surgineering/liver_vessel_segm/-/blob/Pascual/Liver%20and%20tumor/KiU-Net/Results/README.md) file in this folder.
 
