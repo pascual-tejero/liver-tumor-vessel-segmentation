@@ -3,7 +3,7 @@
 ## Requirements:
 
 ```bash
-numpy==1.14.2
+numpy==1.22.0
 torch==1.0.1.post2
 visdom==0.1.8.8
 pandas==0.23.3
