@@ -11,6 +11,8 @@ After obtaining similar results as in the paper, the code was modified to be abl
 ## Usage
 
 ### 1. Download Google pre-trained ViT models
+
+The original TransUNet use a pretrained model from Image net. The model that performed better in Synapse dataset and LiTS dataset is R50-ViT-B_16. 
 * [Get models in this link](https://console.cloud.google.com/storage/vit_models/): R50-ViT-B_16, ViT-B_16, ViT-L_16...
 ```bash
 wget https://storage.googleapis.com/vit_models/imagenet21k/{MODEL_NAME}.npz &&
@@ -20,7 +22,7 @@ mv {MODEL_NAME}.npz ../model/vit_checkpoint/imagenet21k/{MODEL_NAME}.npz
 
 ### 2. Prepare data
 
-Please go to ["./datasets/README.md"](datasets/README.md) for details, the pre-processed is in NAS folders "Natalia AP/TransUnet/data/LITS".
+Please go to ["./datasets/README.md"](datasets/README.md) for details, the pre-processed data is in NAS folders "Natalia AP/TransUnet/data/LITS".
 
 ### 3. Parameter Configuration
 
@@ -101,6 +103,9 @@ The dice score (%) results on testing for each type of tumor are possible to see
 |Small| <7000|95.42|45.89%|
 
 Because of previous results is possible to see that the model is robust for multi-segmentation in cases that both classes have a significant total number of pixels. On the other hand, if one of the classes doesn't have a big representation in the image the model fails to segment them accurately.
+
+
+For future work, you can pre-train the model on BraTS (Brain Tumor Segmentation) dataset or the ISIC (Skin Cancer) dataset, and leverage the transfer learning effect and check if there is an improvement in the model's performance.
 
 ## Reference
 * [Google ViT](https://github.com/google-research/vision_transformer)
