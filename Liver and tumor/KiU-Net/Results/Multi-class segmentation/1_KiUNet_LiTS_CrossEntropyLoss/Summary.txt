@@ -1,0 +1,6 @@
+para.size = 48
+Loss = Cross Entropy Loss
+Dataset = Liver Tumor Segmentation Challenge (LiTS)
+Image size = 256x256
+Neural network = KiUNet
+Epochs = 1000

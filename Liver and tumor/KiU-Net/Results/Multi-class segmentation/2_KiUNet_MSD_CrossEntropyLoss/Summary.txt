@@ -1,0 +1,6 @@
+para.size = 48
+Loss = Cross Entropy Loss
+Dataset = Medical Segmentation Decathlon (MSD)
+Image size = 256x256
+Neural network = KiUNet
+Epochs = 300
