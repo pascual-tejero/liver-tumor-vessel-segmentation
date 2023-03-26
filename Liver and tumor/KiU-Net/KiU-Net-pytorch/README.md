@@ -51,6 +51,7 @@ The models included in this project were designed for an image size of 256x256 a
 
 The directory structure of the whole project is as follows:
 
+```bash
 .
 ├── Dataset
 │      └── LiTS
@@ -78,7 +79,7 @@ The directory structure of the whole project is as follows:
 │
 └── KiU-Net
        └── KiU-Net-pytorch
-
+```
 
 
 
