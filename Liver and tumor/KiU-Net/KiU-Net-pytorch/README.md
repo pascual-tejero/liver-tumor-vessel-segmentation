@@ -49,6 +49,37 @@ Go to [parameter.py](https://gitlab.lrz.de/computational-surgineering/liver_vess
 
 The models included in this project were designed for an image size of 256x256 and use a weighted cross-entropy loss function. It's important to note that they were trained with only 1-dimensional ground truth masks, without one-hot encoding. If you need to use a different image size or loss function, you may need to modify the architecture accordingly.
 
+The directory structure of the whole project is as follows:
+
+.
+├── Dataset
+│      └── LiTS
+│            ├── train
+│            │     ├── seg
+│            │     │    ├── volume-0.nii
+│            │     │    └── *.nii
+│            │     │
+│            │     └── ct
+│            │          ├── segmentation-0.nii.gz
+│            │          └── *.nii
+│            └── test
+│                 ├── seg
+│                 │    ├── volume-27.nii
+│                 │    └── *.nii
+│                 │
+│                 └── ct
+│                      ├── segmentation-27.nii.gz
+│                      └── *.nii
+│                      
+├── Results
+│      ├── Binary segmentation
+│      │      
+│      └── Multi-class segmentation
+│
+└── KiU-Net
+       └── KiU-Net-pytorch
+
+
 
 
 
