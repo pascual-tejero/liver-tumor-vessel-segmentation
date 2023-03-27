@@ -20,7 +20,7 @@ train_config = {
         "input_shape":  (80, 80, 80),
         "resume":       None,
         "use_cuda":     True,
-        "debug":        False,
+        "debug":        False
 }
 
 test_config = {
@@ -32,6 +32,5 @@ test_config = {
         "batch_size":   2,
         "input_shape":  (80, 80, 80),
         "resume":       "/data/jorge_perez/Models/model_APAUNetHepaticVessel_epoch200_DICE_107817.pth",
-        "use_cuda":     True,
-        "use_polyaxon": True
+        "use_cuda":     True
         }
