@@ -14,36 +14,16 @@ APAUNet is a segmentation network for 3D medical image data. It aims to improve 
 
 ---
 
-## Requirement
-
-* python 3.8
-* pytotch 1.11.0_cu113
-* torchvision 0.12.0+cu113
-* opencv(cv2) 4.5
-* tensorboard
-* monai
-* medpy
-* SimpleITK
-* nibabel
-* einops
-
-```
-pip install -r requirement.txt  # install requirements
-```
-
----
-
 ## Dataset
 
 ### 1. Dataset download
 
 Datasets can be acquired via following links:
 * [Medical Segmentation Decathlon: Liver and Pancreas](https://drive.google.com/drive/folders/1HqEgzS8BV2c7xYNrZdEAnrHk7osJJ--2)
-* [The Synapse multi-organ CT dataset](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789)
 
 ### 2. Setting up the datasets
 
-After you have downloaded the datasets, you can follow the settings in nnUNet for path configurations and preprocessing procedures. Finally, your folders should be organized as follows:
+After you have downloaded the datasets, you can follow the settings in * [nnUNet](https://github.com/NVIDIA/DeepLearningExamples/tree/master/PyTorch/Segmentation/nnUNet) for path configurations and preprocessing procedures. Finally, your folders should be organized as follows:
 
 ```
 ./DATASET/
@@ -103,19 +83,12 @@ All the training and testing hyper-parameters are set in [config.py](config.py).
 python train.py 
 ```
 
-### 2. Inference
+### 2. Testing
 
 ```
-python inference.py
+python tester.py
 ```
-It will produce a predicted segmentation mask for the given testing data. Then you can use [ITK-Snap](http://www.itksnap.org) to visualize the infernce results.
-
-### 3. Cross-fold validation
-
-```
-python train_fold.py
-```
-The default fold number is 5.
+It will produce a predicted segmentation mask for the given testing data. Then you can use [ITK-Snap](http://www.itksnap.org) to visualize the inference results.
 
 ---
 
