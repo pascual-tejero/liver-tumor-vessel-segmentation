@@ -113,4 +113,3 @@ For future work, you can pre-train the model on BraTS (Brain Tumor Segmentation)
 * [segmentation_models.pytorch](https://github.com/qubvel/segmentation_models.pytorch)
 * [TransUnet](https://github.com/Beckschen/TransUNet)
 
-going. You can also make an explicit request for maintainers.
