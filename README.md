@@ -7,7 +7,7 @@ The objective of this project is to improve the visualization during the TACE pr
 The TACE project was completed by the following project members:
 
 1. Natalia Avendaño Prieto
-2. Jorge Padilla Perez
+2. Jorge Padilla Pérez
 3. Pascual Tejero Cervera
 
 ## Liver and Tumor Segmentation
