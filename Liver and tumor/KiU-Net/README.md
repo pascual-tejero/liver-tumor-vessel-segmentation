@@ -17,7 +17,7 @@ Overall, KiU-Net 3D is a convolutional architecture designed for volumetric segm
 
 ![KiU-Net architecture](img/arch.png)
 
-## KiU-Net-pytorch folder
+## Code implementation
 
 The [KiU-Net-pytorch](https://github.com/pascutc98/liver-tumor-vessel-segmentation/tree/main/Liver%20and%20tumor/KiU-Net/KiU-Net-pytorch) folder contains the complete architecture code for our proposed task of segmenting the liver and tumor from medical CT-contrast-enhanced scans. However, the original code was designed for a binary segmentation task that only differentiated between the background and the liver/tumor.
 
@@ -32,9 +32,9 @@ The [Results](https://github.com/pascutc98/liver-tumor-vessel-segmentation/tree/
 
 For more detailed information about the results and how they were obtained, please refer to the [README.md](https://github.com/pascutc98/liver-tumor-vessel-segmentation/blob/main/Liver%20and%20tumor/KiU-Net/Results/README.md) file in this folder.
 
-## KiUNet.iynb
+## Jupyter Notebook KiU-Net
 
-Our code provides a comprehensive analysis of several datasets commonly used for the segmentation task, including LiTS, Medical Segmentation Decathlon, and 3D-IRCADb-01. For each patient in both the training and test sets, we perform label detection and counting for the background, liver, and tumor, as well as identify patients whose masks do not contain segmented tumors. We also analyze the size of the liver and tumor by identifying the slices where they are located in each direction, unique labels, and the maximum and minimum slice differences for segmentation.
+Our code [KiUNet.iynb](https://github.com/pascutc98/liver-tumor-vessel-segmentation/blob/main/Liver%20and%20tumor/KiU-Net/KiU-Net.ipynb) provides a comprehensive analysis of several datasets commonly used for the segmentation task, including LiTS, Medical Segmentation Decathlon, and 3D-IRCADb-01. For each patient in both the training and test sets, we perform label detection and counting for the background, liver, and tumor, as well as identify patients whose masks do not contain segmented tumors. We also analyze the size of the liver and tumor by identifying the slices where they are located in each direction, unique labels, and the maximum and minimum slice differences for segmentation.
 
 To further aid in our analysis, we provide visualizations of the slice difference and the CT scan. Additionally, our code includes training and testing for various architectures, and visualizations of the loss function to aid in model selection and optimization.
 
