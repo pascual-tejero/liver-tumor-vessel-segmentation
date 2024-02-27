@@ -42,4 +42,4 @@ Overall, our code provides a comprehensive and detailed analysis of these datase
 
 ## References
 
-[KiU-Net: Overcomplete Convolutional Architectures for Biomedical Image and Volumetric Segmentation](https://arxiv.org/abs/2006.04878). Jeya Maria Jose Valanarasu, Vishwanath A. Sindagi, Ilker Hacihaliloglu and Vishal M. Patel (2021). IEEE Transactions on Medical Imaging, vol. 40, no. 5, pp. 1425-1437, May 2021, doi: 10.1109/TMI.2021.3068556.
+Valanarasu, Jeya Maria Jose, Vishwanath A. Sindagi, Ilker Hacihaliloglu, and Vishal M. Patel. "[KiU-Net: Towards Accurate Segmentation of Biomedical Images using Over-complete Representations](https://arxiv.org/abs/2006.04878)." In Medical Image Computing and Computer Assisted Intervention–MICCAI 2020: 23rd International Conference, Lima, Peru, October 4–8, 2020, Proceedings, Part IV 23, pp. 363-373. Springer International Publishing, 2020. 
