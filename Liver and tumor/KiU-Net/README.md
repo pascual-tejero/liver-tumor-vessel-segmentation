@@ -23,7 +23,7 @@ The [KiU-Net-pytorch](https://github.com/pascutc98/liver-tumor-vessel-segmentati
 
 In order to adapt the code to our more complex multi-class segmentation task, we made significant changes to the architecture. These modifications are described in detail in the [README.md](https://github.com/pascutc98/liver-tumor-vessel-segmentation/blob/main/Liver%20and%20tumor/KiU-Net/KiU-Net-pytorch/README.md) file located in the [KiU-Net-pytorch](https://github.com/pascutc98/liver-tumor-vessel-segmentation/tree/main/Liver%20and%20tumor/KiU-Net/KiU-Net-pytorch) folder. Please refer to this folder for a comprehensive overview of the changes we made to the original code, which we believe will improve the accuracy and efficiency of our segmentation task.
 
-## Results folder
+## Results
 
 The [Results](https://github.com/pascutc98/liver-tumor-vessel-segmentation/tree/main/Liver%20and%20tumor/KiU-Net/Results) folder contains the dice scores for the segmentation task using different architectures, including ResUNet, UNet, SegNet, KiUNetmin, and KiUNet. The results are organized into two folders: binary segmentation and multi-class segmentation.
 
