@@ -10,7 +10,6 @@ pandas==0.23.3
 scipy==1.0.0
 tqdm==4.40.2
 scikit-image==0.13.1
-SimpleITK==1.0.1
 pydensecrf==1.0rc3
 ```
 
@@ -62,7 +61,7 @@ The directory structure of the whole project is as follows:
 │            │     │
 │            │     └── ct
 │            │          ├── segmentation-0.nii.gz
-│            │          └── *.nii
+│            │          └── *.nii.gz
 │            └── test
 │                 ├── seg
 │                 │    ├── volume-27.nii
@@ -70,7 +69,7 @@ The directory structure of the whole project is as follows:
 │                 │
 │                 └── ct
 │                      ├── segmentation-27.nii.gz
-│                      └── *.nii
+│                      └── *.nii.gz
 │                      
 ├── Results
 │      ├── Binary segmentation
