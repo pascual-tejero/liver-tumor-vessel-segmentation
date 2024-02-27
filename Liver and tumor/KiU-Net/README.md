@@ -1,6 +1,6 @@
 # Liver and Tumor Segmentation - KiU-Net
 
-This part of the project aims to enhance the neural network architecture known as KiU-Net, as described in the paper [KiU-Net: Towards Accurate Segmentation of Biomedical Images using Over-complete Representations](https://arxiv.org/abs/2006.04878) by Jeya Maria Jose Valanarasu, Vishwanath A. Sindagi, Ilker Hacihaliloglu, and Vishal M. Patel. Specifically, we will adapt and improve the existing code available in the repository linked [here](https://github.com/jeya-maria-jose/KiU-Net-pytorch).
+This part of the project aims to enhance the neural network architecture known as KiU-Net, as described in the paper [KiU-Net: Towards Accurate Segmentation of Biomedical Images using Over-complete Representations](https://arxiv.org/abs/2006.04878) by Jeya Maria Jose, Vishwanath Sindagi, Ilker Hacihaliloglu and Vishal M. Patel [1]. Specifically, we will adapt and improve the existing code available in the repository linked [here](https://github.com/jeya-maria-jose/KiU-Net-pytorch).
 
 The task is to use KiU-Net to segment the liver and tumor from medical CT-contrast-enhanced scans, using the public dataset provided by the[ LiTS challenge](https://competitions.codalab.org/competitions/17094). This is a challenging problem with many potential applications in medical imaging, and we believe that the modifications to KiU-Net will enable more accurate and efficient segmentation of these important structures.
 
@@ -42,4 +42,4 @@ Overall, our code provides a comprehensive and detailed analysis of these datase
 
 ## References
 
-Valanarasu, Jeya Maria Jose, Vishwanath A. Sindagi, Ilker Hacihaliloglu, and Vishal M. Patel. [KiU-Net: Towards Accurate Segmentation of Biomedical Images using Over-complete Representations](https://arxiv.org/abs/2006.04878). In Medical Image Computing and Computer Assisted Intervention–MICCAI 2020: 23rd International Conference, Lima, Peru, October 4–8, 2020, Proceedings, Part IV 23, pp. 363-373. Springer International Publishing, 2020. 
+[1] Jeya Maria Jose, Vishwanath Sindagi, Ilker Hacihaliloglu and Vishal M. Patel. [KiU-Net: Towards Accurate Segmentation of Biomedical Images using Over-complete Representations](https://arxiv.org/abs/2006.04878). In Medical Image Computing and Computer Assisted Intervention–MICCAI 2020: 23rd International Conference, Lima, Peru, October 4–8, 2020, Proceedings, Part IV 23, pp. 363-373. Springer International Publishing, 2020. 
