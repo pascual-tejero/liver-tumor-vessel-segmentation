@@ -1,11 +1,11 @@
-# Liver and tumor segmentation - KiU-Net
+# Liver and Tumor Segmentation - KiU-Net
 
 This part of the project aims to enhance the neural network architecture known as KiU-Net, as described in the paper [KiU-Net: Towards Accurate Segmentation of Biomedical Images using Over-complete Representations](https://arxiv.org/abs/2006.04878) by Jeya Maria Jose Valanarasu, Vishwanath A. Sindagi, Ilker Hacihaliloglu, and Vishal M. Patel. Specifically, we will adapt and improve the existing code available in the repository linked [here](https://github.com/jeya-maria-jose/KiU-Net-pytorch).
 
 The task is to use KiU-Net to segment the liver and tumor from medical CT-contrast-enhanced scans, using the public dataset provided by the[ LiTS challenge](https://competitions.codalab.org/competitions/17094). This is a challenging problem with many potential applications in medical imaging, and we believe that the modifications to KiU-Net will enable more accurate and efficient segmentation of these important structures.
 
 
-## Architecture overview
+## Architecture Overview
 
 The "traditional" encoder-decoder networks such as U-Net architecture has been widely used for segmentation tasks, but it focuses more on high-level features rather than low-level features, which are important for detecting small structures like lesions. This can be problematic as the receptive field increases with depth in the decoder.
 
@@ -17,7 +17,7 @@ Overall, KiU-Net 3D is a convolutional architecture designed for volumetric segm
 
 ![KiU-Net architecture](img/arch.png)
 
-## Code implementation
+## Code Implementation
 
 The [KiU-Net-pytorch](https://github.com/pascutc98/liver-tumor-vessel-segmentation/tree/main/Liver%20and%20tumor/KiU-Net/KiU-Net-pytorch) folder contains the complete architecture code for our proposed task of segmenting the liver and tumor from medical CT-contrast-enhanced scans. However, the original code was designed for a binary segmentation task that only differentiated between the background and the liver/tumor.
 
