@@ -42,4 +42,4 @@ Overall, our code provides a comprehensive and detailed analysis of these datase
 
 ## References
 
-Valanarasu, Jeya Maria Jose, Vishwanath A. Sindagi, Ilker Hacihaliloglu, and Vishal M. Patel. "[KiU-Net: Towards Accurate Segmentation of Biomedical Images using Over-complete Representations](https://arxiv.org/abs/2006.04878)." In Medical Image Computing and Computer Assisted Intervention–MICCAI 2020: 23rd International Conference, Lima, Peru, October 4–8, 2020, Proceedings, Part IV 23, pp. 363-373. Springer International Publishing, 2020. 
+Valanarasu, Jeya Maria Jose, Vishwanath A. Sindagi, Ilker Hacihaliloglu, and Vishal M. Patel. [KiU-Net: Towards Accurate Segmentation of Biomedical Images using Over-complete Representations](https://arxiv.org/abs/2006.04878). In Medical Image Computing and Computer Assisted Intervention–MICCAI 2020: 23rd International Conference, Lima, Peru, October 4–8, 2020, Proceedings, Part IV 23, pp. 363-373. Springer International Publishing, 2020. 
